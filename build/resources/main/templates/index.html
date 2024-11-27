@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cutecensus</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Home Page</h2>
+    </div>
+    <div class="content">
+        <p th:text="|Hello, ${name}!|" />
+        <a href="/standings">Standings</a>
+        <a href="/head2head">Head2Head</a>
+    </div>
+</div>
+</body>
+</html>

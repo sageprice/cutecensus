@@ -1,0 +1,100 @@
+html {
+  background-color: lightpink;
+}
+
+body {
+  font-family: "Twinkle Star", sans-serif;
+  /* font-size: 30px;*/
+}
+
+h2 {
+  font-size: 4em;
+  text-align: center;
+  color: orchid;
+  text-shadow: 0px 0px 8px darkseagreen;
+}
+
+p {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table {
+  text-align: center;
+  margin: auto;
+}
+
+th {
+  width: 6rem;
+}
+
+#links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+#matchup {
+  display: flex;
+  justify-content: center; /* Distribute space between columns */
+  align-items: center;          /* Make columns the same height */
+  height: 60vh;                 /* Make container span the full viewport height */
+  gap: 10px;                     /* Optional: Add spacing between columns */
+  padding: 10px;                 /* Optional: Add padding around the container */
+  background-color: #fa97c6;     /* Optional: Background for the container */
+}
+
+#left {
+}
+
+#divider {
+  flex: 2;                       /* Each column takes equal space */
+  background-color: #f4818b;     /* Optional: Background color for columns */
+  border: 1px solid #ccc;        /* Optional: Border around columns */
+  padding: 20px;                 /* Optional: Inner padding for columns */
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow */
+  border-radius: 25px;
+}
+
+#right {
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.choice {
+  font-size: 1.5em;
+  background: none;
+  border: 0px;
+  cursor: pointer;
+}
+
+.contestant {
+  flex: 3;
+  background-color: hotpink;
+  border-radius: 40px;
+  border: 1px solid #ccc;        /* Optional: Border around columns */
+  padding: 20px;                 /* Optional: Inner padding for columns */
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow */
+}
+
+.name {
+}
+
+.profpic {
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px 10px rgb(255 249 1 / 38%);
+}
+
+#whoIsCuter {
+  font-size: 2.5em;
+}

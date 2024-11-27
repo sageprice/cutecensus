@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Cutecensus</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="hearts.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sunshiney&family=Twinkle+Star&display=swap" rel="stylesheet">
+        <script src="standings.js" type="text/javascript"></script>
+        <script src="hearts.js" type="text/javascript"></script>
+    </head>
+    <body onload="getMatchup()">
+        <div class="container">
+            <div class="header">
+                <h2>Cutecensus</h2>
+                <div id="links">
+                    <h3><a href="/standings">Standings</a></h3>
+                    <h3><a href="/head2head">Head2Head</a></h3>
+                </div>
+            </div>
+            <div id="matchup">
+                <div class="contestant" id="left">
+                    <p class="name" id="leftp"></p>
+                    <img src="" alt="cute animal" class="profpic" id="leftimg" width="250px" />
+                </div>
+                <div id="divider">
+                    <p class="font-effect-neon" id="whoIsCuter">Who is cuter???</p>
+                    <div id="buttons">
+                        <button class="choice" onclick="sendLeftWinner()">⬅️</button>
+                        <button class="choice" onclick="sendTie()">Both!</button>
+                        <button class="choice" onclick="sendRightWinner()">➡️</button>
+                    </div>
+                </div>
+                <div class="contestant" id="right">
+                    <p class="name" id="rightp"></p>
+                    <img src="" alt="cute animal" class="profpic" id="rightimg" width="250px" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
