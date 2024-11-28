@@ -27,4 +27,9 @@ class SiteController {
   fun getHomepage(model: Model): String {
     return "head2head"
   }
+
+  @GetMapping("/faq")
+  fun getFaq(model: Model): String {
+    return "faq"
+  }
 }

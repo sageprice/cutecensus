@@ -14,7 +14,7 @@ object MatchupDal {
     "pangolin",
     "pig",
     "pigeon",
-    "possum",
+    "opossum",
     "raccoon",
     "rabbit",
     "rat",

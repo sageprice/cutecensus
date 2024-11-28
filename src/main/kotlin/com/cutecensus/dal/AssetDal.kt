@@ -13,7 +13,7 @@ object AssetDal {
     "seal"      to  listOf("https://d1oblw1lg7ia0k.cloudfront.net/pig.jpg"),
     "pig"       to  listOf("https://d1oblw1lg7ia0k.cloudfront.net/pig.jpg"),
     "pigeon"    to  listOf("https://d1oblw1lg7ia0k.cloudfront.net/pigeon.jpg"),
-    "possum"    to  listOf("https://d1oblw1lg7ia0k.cloudfront.net/wiki-baby-possum.jpg"),
+    "opossum"    to  listOf("https://d1oblw1lg7ia0k.cloudfront.net/wiki-baby-possum.jpg"),
     "raccoon"   to  listOf("https://d1oblw1lg7ia0k.cloudfront.net/wiki_raccoon.jpeg"),
     "rabbit"    to  listOf("https://d1oblw1lg7ia0k.cloudfront.net/rabbit.jpg"),
     "rat"       to  listOf("https://d1oblw1lg7ia0k.cloudfront.net/rat.jpg"),
