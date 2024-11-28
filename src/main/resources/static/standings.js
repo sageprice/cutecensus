@@ -1,3 +1,16 @@
+
+// Register event listener for arrow keys to quick select winner.
+document.addEventListener('keydown', function(event) {
+  if (window.location.href.includes('head2head')) {
+    if (event.key == 'ArrowLeft') {
+      sendLeftWinner()
+    } else if (event.key == 'ArrowRight') {
+      sendRightWinner()
+    }
+  }
+});
+
+// Retrieve the current rankings and display them.
 function getRankings() {
   fetch('http://localhost:8080/api/v1/standings')
     .then(response => {
@@ -16,6 +29,7 @@ function getRankings() {
     });
 }
 
+// Updates the standings table with the current rankings from the backend.
 function updateTable(standings) {
   let tableBodyDiv = document.getElementById('listbody');
   for (let i = 0; i < standings.length; i++) {
