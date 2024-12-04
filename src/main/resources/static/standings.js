@@ -12,7 +12,7 @@ document.addEventListener('keydown', function(event) {
 
 // Retrieve the current rankings and display them.
 function getRankings() {
-  fetch('http://localhost:8080/api/v1/standings')
+  fetch(`${getDomain()}/api/v1/standings`)
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok: ' + response);
@@ -82,7 +82,7 @@ function recordResult(winnerDirection) {
   }
   console.log("Winner: " + winner)
   console.log("Loser: " + loser)
-  uploadResult(`http://localhost:8080/api/v1/comparison?winner=${winner}&loser=${loser}&isDraw=${isDraw}`)
+  uploadResult(`${getDomain()}/api/v1/comparison?winner=${winner}&loser=${loser}&isDraw=${isDraw}`)
   getNewMatchup([left, right])
 }
 
@@ -111,7 +111,7 @@ function getMatchup() {
 }
 
 function getNewMatchup(excludedAnimals) {
-  let endpoint = `http://localhost:8080/api/v1/matchups/random`
+  let endpoint = `${getDomain()}/api/v1/matchups/random`
   if (excludedAnimals.length > 0) {
     endpoint += `?except=` + excludedAnimals.join(",")
   }
@@ -135,4 +135,8 @@ function getNewMatchup(excludedAnimals) {
     .catch(error => {
       console.error('Error:', error);
     });
+}
+
+function getDomain() {
+  return window.location.origin;
 }

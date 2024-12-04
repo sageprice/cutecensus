@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: "Twinkle Star", sans-serif;
+  margin: 0px;
   /* font-size: 30px;*/
 }
 
@@ -93,6 +94,7 @@ td {
   border: 1px solid #ccc;        /* Optional: Border around columns */
   padding: 20px;                 /* Optional: Inner padding for columns */
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow */
+  min-height: 350px;
 }
 
 .name {
